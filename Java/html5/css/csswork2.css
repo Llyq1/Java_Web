@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+@font-face {
+    font-family: Misans Heavy;
+}
+@font-face {
+    font-family: 字由文艺黑;
+}
+@font-face {
+    font-family: 优设字由棒棒体;
+}
+@font-face {
+    font-family: acier sans sans;
+}
+@font-face {
+    font-family: Camar;
+}
+@font-face {
+    font-family: TheNightWatch;
+}
+.a{font-family: 优设字由棒棒体; align-content: center}
+li{height: 54px}
+.a{
+    font-family: Camar;font-size: 40px;color: #333;
+}
+.b{
+    font-family: TheNightWatch;font-size: 40px;color: #4c9372;
+}
+.c{
+    font-family: 字由文艺黑;font-size: 40px;color: #4c9372;
+}
+.d{
+    font-family: 优设字由棒棒体;font-size: 40px;color: aqua;
+}
+.e{
+    font-family: Misans Heavy;font-size: 40px;color: #e1005a;
+}
+.f{
+    font-family: acier sans sans;font-size: 40px;color: #3313;
+}
+.g{
+    font-family: 微软雅黑;font-size: 40px;color: darkred;
+}
+.h{
+    width: 500px;font-family: 微软雅黑;font-size: 40px;color: #747474;
+    white-space: nowrap;overflow:hidden;text-overflow: ellipsis;
+}
