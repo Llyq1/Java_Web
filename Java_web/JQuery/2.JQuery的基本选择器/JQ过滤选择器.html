@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/JQuerymini.js"></script>
+    <script>
+        $(function () {
+            <!--匹配ul中的li-->
+            $("ul li").click(function(){
+                $(this).hide();
+            });
+            <!--匹配第一个li元素-->
+            $("li:first").click(function () {
+                $(this).hide();
+            });
+            <!--匹配ul后面标签为p的元素-->
+            $("ul+p").click(function () {
+                $(this).hide();
+            });
+            <!--匹配ol后面所有标签为p的元素-->
+            $("ol~p").click(function () {
+                $(this).hide();
+            });
+            <!--匹配索引为偶数的ul中索引为偶数的li-->
+            $("ul:even li:even").click(function () {
+                $(this).hide();
+            });
+            <!--匹配索引为奇数的ul中索引为奇数的li-->
+            $("ul:odd li:odd").click(function () {
+                $(this).hide();
+            });
+            <!--匹配第2个ul标签中的第2个li标签-->
+            $("ul:eq(1) li:eq(1)").click(function () {
+                $(this).hide();
+            });
+            <!--匹配索引值大于0的li-->
+            $("li:gt(0)").click(function () {
+                $(this).hide();
+            });
+            <!--匹配索引值小于1的li-->
+            $("li:lt(1)").click(function () {
+                $(this).hide();
+            });
+            <!--匹配正在动画的元素-->
+            $("li:animated").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<header 1>adada</header>
+<ul>
+    <li>1</li>
+    <li>12</li>
+    <li>123</li>
+    <li>1234</li>
+</ul>
+<p>5</p>
+<p>6</p>
+<ol>
+    <li>1</li>
+    <li>12</li>
+    <li>123</li>
+    <li>1234</li>
+</ol>
+<p>5</p>
+<p>6</p>
+</body>
+</html>

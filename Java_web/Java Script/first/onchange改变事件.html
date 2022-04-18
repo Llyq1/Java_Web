@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchangefun(){
+            alert("女神变了")
+        }
+        window.onload=function (){
+            var obj=document.getElementById(12)
+            obj.onchange=function (){
+                alert("女神动态变化")
+            }
+        }
+    </script>
+</head>
+<body>
+<select onchange="onchangefun()">
+    <option>---女神---</option>
+    <option>---陈舒敏---</option>
+    <option>---李红龙---</option>
+    <option>---伍湘琴---</option>
+    <option>---刘一璇---</option>
+</select>
+<select id="12">
+    <option>---女神---</option>
+    <option>---陈舒敏---</option>
+    <option>---李红龙---</option>
+    <option>---伍湘琴---</option>
+    <option>---刘一璇---</option>
+</select>
+</body>
+</html>

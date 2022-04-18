@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/JQuerymini.js"></script>
+    <script type="text/javascript">
+       /* $(function(){
+            var $btn= $("#jq");
+            $btn.click(function(){
+                alert("我是JQ对象");
+                $btn.innerHTML="我是JQ对象";
+            });
+        })*/
+       $(function(){
+           var $btn= $("#jq");
+           $btn.click(function(){
+               alert("我是JQ对象");
+               $btn[0].innerHTML="我是JQ对象";
+           });
+       })
+        /*window.onload=function(){
+            var $btn= document.getElementById("dom");
+            $btn.click(function(){
+                alert("我是dom对象");
+                $btn.innerHTML="我是dom对象";
+            });
+        }*/
+       window.onload=function(){
+           var $btn= $(document.getElementById("dom"));
+           $btn.click(function(){
+               alert("我是dom对象");
+               $btn[0].innerHTML="我是dom对象";
+           });
+       }
+    </script>
+</head>
+<body>
+<p id="jq">我是p标签</p>
+<h1 id="dom">我是h1标签</h1>
+</body>
+</html>
+<!--JQuery对象需要加上下标变成dom对象才能使用dom对象的方法 而dom对象无法使用jq对象的方法也需要转换成jq对象-->

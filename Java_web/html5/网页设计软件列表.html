@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页设计软件列表</title>
+    <style type="text/css" rel="stylesheet">
+#a,#b,#c,#d{
+    text-align: center;float: left;font-size: 30px;
+}
+    </style>
+    <script type="text/javascript">
+        window.onload=function () {
+            var div1=document.getElementById("a");
+            var div2=document.getElementById("b");
+            var div3=document.getElementById("c");
+            var div4=document.getElementById("d");
+            var div5=document.getElementById("e");
+            div1.onclick=function () {
+                div5.innerHTML="<img src=\"images//1.jpg\" width='100%'>";
+            }
+            div2.onclick=function () {
+                div5.innerHTML="<img src=\"images//2.jpg\" width='100%'>";
+            }
+            div3.onclick=function () {
+                div5.innerHTML="<img src=\"images//3.jpg\" width='100%'>";
+            }
+            div4.onclick=function () {
+                div5.innerHTML="<img src=\"images//4.jpg\" width='100%'>";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1 align="center">网页设计软件列表</h1>
+<div>
+<hr  style="height: 10px" color="red"  >
+<div>
+<div id="a">
+    photoshop软件</div>
+    <div  style="white-space: pre;float: left " >         </div>
+<div id="b" >
+    illustrator软件</div>
+    <div  style="white-space: pre;float: left " >         </div>
+<div id="c" >
+    Dreamweaver软件</div>
+    <div  style="white-space: pre;float: left " >         </div>
+<div id="d" >
+    Fireworks软件    </div>
+</div>
+<hr  style="height: 10px;clear: left" color="red"   >
+</div>
+<p id="e" style="text-align: center">
+
+<p>
+</body>
+</html>

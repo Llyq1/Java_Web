@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="../js/JQuerymini.js"></script>
+  <script>
+      $(function(){
+          $("p").click(function(){
+              $(this).hide();
+          });
+          <!--匹配ul中所有空元素-->
+          $("ul li:empty").css("background","red");
+          <!--匹配ul中含有子元素或文本的li元素-->
+          $("ul li:parent").css("background","green");
+          <!--匹配ul中含有p的元素-->
+          $("ul li:has(p)").css("background","blue");
+          <!--匹配ul中含有文本2的元素-->
+          $("ul li:contains('2')").css("background","yellow");
+      });
+  </script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>
+        <p></p>
+    </li>
+    <li>2</li>
+    <li></li>
+</ul>
+</body>
+</html>

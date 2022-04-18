@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onclickfun(){
+            var obj=document.getElementById("onclick");
+            var pat=/^\w{5,12}$/;
+            var obj2=document.getElementById("unamespan");
+            if(!pat.test(obj.value))
+            {
+                obj2.innerHTML="X";
+            }
+
+            else {
+                obj2.innerHTML="<font color='#00ff7f'>√</font>";
+
+                }
+        }
+    </script>
+</head>
+<body>
+用户名:<input type="text"b id="onclick"/>
+<span id="unamespan" style="color: #e1005a"></span>
+<button onclick="onclickfun()" >检验用户名</button>
+</body>
+</html>
